@@ -20,3 +20,12 @@ microservice:
 
 payment-service: http://PAYMENT-SERVICE/payment/doPayment
 order-service: http://ORDER-SERVICE/order/bookOrder
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
